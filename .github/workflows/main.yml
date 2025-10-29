@@ -37,11 +37,5 @@ jobs:
           sudo apt install ./discord.deb -y
           rm discord.deb
 
-      - name: Download and install Visual Studio Code
-        run: |
-          wget -qO vscode.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-          sudo apt install ./vscode.deb -y
-          rm vscode.deb
-
       - name: Run sshx
         run: curl -sSf https://sshx.io/get | sh -s run
